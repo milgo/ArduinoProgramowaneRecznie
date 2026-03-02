@@ -85,6 +85,7 @@ void _gs(uint32_t param);
 
 extern void setupMem();
 extern void onLoopEnd();
+extern void onIOFlag();
 extern void executeCommandAt(int pl);
 extern void executeCommand(uint32_t param);
 extern void timersRoutine();

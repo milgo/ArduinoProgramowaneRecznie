@@ -188,9 +188,11 @@ uint8_t exitRunningCounter;
 uint8_t screenSaverCounter;
 uint8_t runningIndCounter;
 uint8_t runningIndCounterPrev;
+uint8_t ioFlag;
 
 void runEvery500ms(){
   runningIndCounter++;
+  ioFlag = 1;
   if(screenSaverCounter<SCREEN_SAVER_TIME)
     screenSaverCounter++;
   if(EXIT_RUNNNING_BUTTONS(buttons))
@@ -220,7 +222,8 @@ void runProgram(){
   runningIndCounterPrev = 0;
   screenSaverCounter = 0;
   exitRunningCounter = EXIT_RUNNING_TIME;
-  
+  ioFlag = 0;
+
   //run
   if(readProgramFromEeprom()){
     programChanged = 0;
@@ -229,40 +232,47 @@ void runProgram(){
       readAnalog();
       writeAnalog();
       
-      displayClear();
-      if(screenSaverCounter < 60){
-
-        //display running indicator
-        if(runningIndCounterPrev != runningIndCounter){
+      if(ioFlag == 1)
+      {
+        if(screenSaverCounter < 60){
           
-          displaySetCursor(0, 0);
-          printA(message, RUNNING_MSG);
-          printA(runningPromptArray, runningIndCounter%4);
-  
-          //display values
-          uint8_t lines = 0;
-          int16_t value;
-          if(m[1] & (1 << 4)){value = m[58] + (m[59] << 8); lines++;;displaySetCursor(0, lines*8);displayPrint(lines);printA(message, COLON); displayPrint(value);}
-          if(m[1] & (1 << 5)){value = m[60] + (m[61] << 8); lines++;displaySetCursor(0, lines*8);displayPrint(lines);printA(message, COLON); displayPrint(value);}
-          if(m[1] & (1 << 6)){value = m[62] + (m[63] << 8); lines++;displaySetCursor(0, lines*8);displayPrint(lines);printA(message, COLON); displayPrint(value);}
-          
-          displayDisplay();
-          runningIndCounterPrev = runningIndCounter;
+          //display running indicator
+          if(runningIndCounterPrev != runningIndCounter){
+            displayClear();
+            displaySetCursor(0, 0);
+            printA(message, RUNNING_MSG);
+            printA(runningPromptArray, runningIndCounter%4);
+    
+            //display values
+            uint8_t lines = 0;
+            int16_t value;
+            if(m[1] & (1 << 4)){value = m[58] + (m[59] << 8); lines++;;displaySetCursor(0, lines*8);displayPrint(lines);printA(message, COLON); displayPrint(value);}
+            if(m[1] & (1 << 5)){value = m[60] + (m[61] << 8); lines++;displaySetCursor(0, lines*8);displayPrint(lines);printA(message, COLON); displayPrint(value);}
+            if(m[1] & (1 << 6)){value = m[62] + (m[63] << 8); lines++;displaySetCursor(0, lines*8);displayPrint(lines);printA(message, COLON); displayPrint(value);}
+            
+            displayDisplay();
+            runningIndCounterPrev = runningIndCounter;
+          }
         }
-      }
-      else if (screenSaverCounter==60){
-        displayDisplay();
-        screenSaverCounter=61;
-      }
+        else if (screenSaverCounter==60){
+          displayClear();
+          displayDisplay();
+          screenSaverCounter=61;        
+        }
 
-      uint8_t newButtons = ~getButtonsNoneBlocking();
+        uint8_t newButtons = ~getButtonsNoneBlocking();
 
-      if(screenSaverCounter<60)
-        buttons = newButtons;
+        if(screenSaverCounter<60)
+          buttons = newButtons;
         
-      if(buttons != newButtons)
-        screenSaverCounter=0;
-      
+        if(buttons != newButtons)
+          screenSaverCounter=0;
+
+        onIOFlag();
+      }
+
+      ioFlag = 0;
+
       executeCommandAt(PC);
       PC++;
       if(PC>=PS){

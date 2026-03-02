@@ -167,13 +167,17 @@ void setupMem(){
 	RTC.read(tm);
 }
 
+void onIOFlag(){
+  RTC.read(tm);
+}
+
 void onLoopEnd(){
   m[1] &= ~(1<<0);
   accumulator[1] = 0;
   accumulator[0] = 0;
   RLO=0;
   cancel_RLO=true;
-	RTC.read(tm);
+	
 }
 
 void timersRoutine(){//10ms

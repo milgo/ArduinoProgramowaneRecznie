@@ -65,7 +65,8 @@ int main()
 
 	SetConsoleTextAttribute(hConsole, WHITE_ON_BLACK);
 	//printf("hello");
-	editProgram();
-
+	//editProgram();
+	loop();
+	
 	return 0;
 }

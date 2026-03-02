@@ -19,5 +19,6 @@ int32_t enterValue(int x, int y, int msg, long int curVal, bool isSigned, int le
 void insertProgramLine(int lpos, int number, int row, bool edit);
 void removeProgramLine(int number);
 void editProgram();
+void loop();
 
 #endif

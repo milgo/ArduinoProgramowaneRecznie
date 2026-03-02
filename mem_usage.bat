@@ -1,0 +1,1 @@
+avr-size ArduinoProgramowaneRecznie.ino.elf

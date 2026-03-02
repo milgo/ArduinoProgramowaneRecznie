@@ -473,3 +473,25 @@ void editProgram(){
     delay(100);
   }
 }
+
+void loop(){
+	switch(menuPosition){
+    case -1: break;
+    case 0:{ 
+          int8_t res = showMenu(runMenu, NULL, 0, 3);
+          switch(res){
+            case 0:writeProgramToEeprom();runProgram();break;
+            case 1:runProgram();break;
+            case 2:break; 
+            default:break;
+          }
+          break;
+          } 
+    case 1: editProgram(); break;
+    case 2: if(programChanged==0)writeProgramToEeprom();else printMessageAndWaitForButton(NO_CHANGES);break;
+    case 3: printA(message, CLEAR_LOCAL_PROGRAM_MSG); displayDisplay(); clearProgramLocal(); delay(1000); break;
+    default: runProgram(); break;
+  }
+  
+  menuPosition = showMenu(mainMenu, NULL, 0, MAIN_MENU_SIZE);
+}

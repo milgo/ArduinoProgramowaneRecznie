@@ -1,0 +1,84 @@
+Adafruit_BusIO_Register class        43 Adafruit_BusIO_Register.h class Adafruit_BusIO_Register {
+Adafruit_BusIO_RegisterBits class        92 Adafruit_BusIO_Register.h class Adafruit_BusIO_RegisterBits {
+Adafruit_EEPROM_I2C class        19 Adafruit_EEPROM_I2C.h class Adafruit_EEPROM_I2C {
+Adafruit_FRAM_I2C class        33 Adafruit_FRAM_I2C.h class Adafruit_FRAM_I2C : public Adafruit_EEPROM_I2C {
+Adafruit_GFX     class        15 Adafruit_GFX.h   class Adafruit_GFX : public Print {
+Adafruit_GFX_Button class       249 Adafruit_GFX.h   class Adafruit_GFX_Button {
+Adafruit_GrayOLED class        47 Adafruit_GrayOLED.h class Adafruit_GrayOLED : public Adafruit_GFX {
+Adafruit_I2CDevice class         8 Adafruit_I2CDevice.h class Adafruit_I2CDevice {
+Adafruit_SPIDevice class        66 Adafruit_SPIDevice.h class Adafruit_SPIDevice {
+Adafruit_SPITFT  class       120 Adafruit_SPITFT.h class Adafruit_SPITFT : public Adafruit_GFX {
+Adafruit_SSD1306 class       126 Adafruit_SSD1306.h class Adafruit_SSD1306 : public Adafruit_GFX {
+ArduinoProgramowaneRecznie chapter       1 README.md        # ArduinoProgramowaneRecznie
+DS1307RTC        class        12 DS1307RTC.h      class DS1307RTC
+Device menu tree section       8 README.md        ## Device menu tree
+GFXcanvas1       class       307 Adafruit_GFX.h   class GFXcanvas1 : public Adafruit_GFX {
+GFXcanvas16      class       366 Adafruit_GFX.h   class GFXcanvas16 : public Adafruit_GFX {
+GFXcanvas8       class       339 Adafruit_GFX.h   class GFXcanvas8 : public Adafruit_GFX {
+Instruction list section     487 README.md        ## Instruction list
+PC               variable     32 ConsoleEditor/main.cpp int8_t volatile PC;
+PC               variable     77 stl.cpp          int8_t volatile PC = 0, PS = 0;
+PCF8574          class        29 PCF8574.h        class PCF8574
+PS               variable     33 ConsoleEditor/main.cpp int8_t volatile PS;
+PS               variable     77 stl.cpp          int8_t volatile PC = 0, PS = 0;
+RLO              variable     75 stl.cpp          uint8_t volatile RLO = 1;
+RTC              variable    217 DS1307RTC.cpp    DS1307RTC RTC = DS1307RTC(); // create an instance for the user
+accI0            variable    553 stl.cpp          int32_t accI0 = 0, accI1 = 0;
+accI1            variable    553 stl.cpp          int32_t accI0 = 0, accI1 = 0;
+accumulator      variable     12 stl.cpp          int32_t accumulator[2];
+activeAImask     variable     50 stl.cpp          uint8_t volatile activeAImask;
+addr             variable     80 stl.cpp          int8_t addr;
+ai               variable     29 stl.cpp          uint8_t volatile ai[8];
+ao               variable     30 stl.cpp          uint8_t volatile ao[12];
+bit_pos          variable     79 stl.cpp          uint8_t mem_ptr, bit_pos, mask, mem_id;
+bufferStr        variable     16 gui.cpp          char bufferStr[16];
+buttons          variable     26 stl.cpp          uint8_t volatile buttons;
+buttons          variable     35 ConsoleEditor/main.cpp uint8_t volatile buttons;
+c                variable     31 stl.cpp          uint8_t volatile c;
+cancel_RLO       variable     76 stl.cpp          uint8_t volatile cancel_RLO = true;
+comGroups        variable    348 messages.h       const char comGroups[] = { 1, 10, 10, 12, 12, 18, 18, 23, 23, 27, 27, 33, 33, 36, 36, 42}; 
+consoleAttributes variable     28 ConsoleEditor/main.cpp WORD consoleAttributes;
+counter          variable     53 stl.cpp          int32_t volatile counter[8];
+default_parallel key         338 ConsoleEditor/avrdude.conf default_parallel = "";
+default_serial   key         339 ConsoleEditor/avrdude.conf default_serial = "";
+diPins           variable     56 stl.cpp          const uint8_t diPins[] = {10, 11, 12, 13};
+display          variable     13 gui.cpp          Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+doPins           variable     57 stl.cpp          const uint8_t doPins[] = {8, 7, 6, 5};
+editorBufStr     variable     11 editor.cpp       char editorBufStr[16];
+editorBufStr     variable     54 ConsoleEditor/editor.cpp char editorBufStr[20];
+fixedTimer       variable     51 stl.cpp          uint8_t volatile fixedTimer[8];
+func_ptr         variable     17 stl.cpp          void (*func_ptr[])(uint32_t) = {_nop, _and, _or, _nand, _nor, _assign, _s, _r, _fp, _fn, 
+getTimePtr       variable    242 Time.cpp         getExternalTime getTimePtr; // pointer to external sync function
+guiBufferStr     variable     15 ConsoleEditor/gui.cpp char guiBufferStr[16];
+hConsole         variable     26 ConsoleEditor/main.cpp HANDLE hConsole;
+m                variable     27 stl.cpp          uint8_t volatile m[64];
+m                variable     34 ConsoleEditor/main.cpp uint8_t volatile m[64];
+mask             variable     79 stl.cpp          uint8_t mem_ptr, bit_pos, mask, mem_id;
+memAI            variable     47 stl.cpp          uint8_t volatile * const memAI[] = {&ai[0], &ai[1], &ai[2], &ai[3], &ai[4], &ai[5], &ai[6], &ai[7]};
+memAO            variable     48 stl.cpp          uint8_t volatile * const memAO[] = {&ao[0], &ao[1], &ao[2], &ao[3], &ao[4], &ao[5], &ao[6], &ao[7], &ao[8], &ao[9], &ao[10], &ao[11]};
+memC             variable     45 stl.cpp          uint8_t volatile * const memC[] = {&c};
+memDI            variable     35 stl.cpp          uint8_t volatile * const memDI[] = {&nullByte};
+memDO            variable     36 stl.cpp          uint8_t volatile * const memDO[] = {&nullByte};
+memM             variable     37 stl.cpp          uint8_t volatile * const memM[] = {&m[0], &m[1], &buttons, &m[3], &m[4], &m[5], &m[6], &m[7],
+memMap           variable     59 stl.cpp          uint8_t volatile *const *memMap[] = {
+memNull          variable     34 stl.cpp          uint8_t volatile * const memNull[] = {&nullByte};
+memT             variable     46 stl.cpp          uint8_t volatile * const memT[] = {&t[0], &t[1], &t[2], &t[3], &t[4], &t[5], &t[6], &t[7]};
+mem_id           variable     79 stl.cpp          uint8_t mem_ptr, bit_pos, mask, mem_id;
+mem_ptr          variable     79 stl.cpp          uint8_t mem_ptr, bit_pos, mask, mem_id;
+menuPosition     variable      9 editor.cpp       int menuPosition = 0;
+menuPosition     variable     52 ConsoleEditor/editor.cpp int menuPosition = 0;
+nullByte         variable     13 stl.cpp          uint8_t nullByte;
+pcf20            variable     14 gui.cpp          PCF8574 pcf20(0x20);
+program          variable     11 stl.cpp          uint32_t program[MAX_PROGRAM_SIZE];
+program          variable     31 ConsoleEditor/main.cpp uint32_t program[MAX_PROGRAM_SIZE];
+programChanged   variable     14 stl.cpp          uint8_t programChanged = 0;
+programChanged   variable     36 ConsoleEditor/main.cpp uint8_t programChanged;
+selectedPosition variable     10 editor.cpp       int selectedPosition = 0;
+selectedPosition variable     53 ConsoleEditor/editor.cpp int selectedPosition = 0;
+sysUnsyncedTime  variable    246 Time.cpp         time_t sysUnsyncedTime = 0; // the time sysTime unadjusted by sync 
+t                variable     28 stl.cpp          uint8_t volatile t[8];
+tcList           variable     72 Adafruit_SPITFT.cpp } tcList[] = {{TC0, TC0_GCLK_ID, EVSYS_ID_USER_TC0_EVU},
+timer            variable     52 stl.cpp          uint32_t volatile timer[8];
+tm               variable     32 stl.cpp          tmElements_t tm;
+writepage        key        8513 ConsoleEditor/avrdude.conf writepage = " 1 1 0 0 0 0 1 0",
+written          variable     14 ConsoleEditor/gui.cpp DWORD written;

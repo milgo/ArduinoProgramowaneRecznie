@@ -1,0 +1,273 @@
+Adafruit_BusIO_Register class        43 Adafruit_BusIO_Register.h class Adafruit_BusIO_Register {
+Adafruit_BusIO_RegisterBits class        92 Adafruit_BusIO_Register.h class Adafruit_BusIO_RegisterBits {
+Adafruit_EEPROM_I2C class        19 Adafruit_EEPROM_I2C.h class Adafruit_EEPROM_I2C {
+Adafruit_FRAM_I2C class        33 Adafruit_FRAM_I2C.h class Adafruit_FRAM_I2C : public Adafruit_EEPROM_I2C {
+Adafruit_GFX     class        15 Adafruit_GFX.h   class Adafruit_GFX : public Print {
+Adafruit_GFX_Button class       249 Adafruit_GFX.h   class Adafruit_GFX_Button {
+Adafruit_GrayOLED class        47 Adafruit_GrayOLED.h class Adafruit_GrayOLED : public Adafruit_GFX {
+Adafruit_I2CDevice class         8 Adafruit_I2CDevice.h class Adafruit_I2CDevice {
+Adafruit_SPIDevice class        66 Adafruit_SPIDevice.h class Adafruit_SPIDevice {
+Adafruit_SPITFT  class       120 Adafruit_SPITFT.h class Adafruit_SPITFT : public Adafruit_GFX {
+Adafruit_SSD1306 class       126 Adafruit_SSD1306.h class Adafruit_SSD1306 : public Adafruit_GFX {
+ArduinoProgramowaneRecznie chapter       1 README.md        # ArduinoProgramowaneRecznie
+DS1307RTC        class        12 DS1307RTC.h      class DS1307RTC
+Device menu tree section       8 README.md        ## Device menu tree
+GFXcanvas1       class       307 Adafruit_GFX.h   class GFXcanvas1 : public Adafruit_GFX {
+GFXcanvas16      class       366 Adafruit_GFX.h   class GFXcanvas16 : public Adafruit_GFX {
+GFXcanvas8       class       339 Adafruit_GFX.h   class GFXcanvas8 : public Adafruit_GFX {
+Instruction list section     487 README.md        ## Instruction list
+PC               variable     32 ConsoleEditor/main.cpp int8_t volatile PC;
+PC               variable     77 stl.cpp          int8_t volatile PC = 0, PS = 0;
+PCF8574          class        29 PCF8574.h        class PCF8574
+PS               variable     33 ConsoleEditor/main.cpp int8_t volatile PS;
+PS               variable     77 stl.cpp          int8_t volatile PC = 0, PS = 0;
+RLO              variable     75 stl.cpp          uint8_t volatile RLO = 1;
+RTC              variable    217 DS1307RTC.cpp    DS1307RTC RTC = DS1307RTC(); // create an instance for the user
+_0               variable     39 messages.h       const char _0[] PROGMEM = "0"; 
+_1               variable     40 messages.h       const char _1[] PROGMEM = "1"; 
+_2               variable     41 messages.h       const char _2[] PROGMEM = "2"; 
+_3               variable     42 messages.h       const char _3[] PROGMEM = "3"; 
+_4               variable     43 messages.h       const char _4[] PROGMEM = "4"; 
+_5               variable     44 messages.h       const char _5[] PROGMEM = "5"; 
+_6               variable     45 messages.h       const char _6[] PROGMEM = "6"; 
+_7               variable     46 messages.h       const char _7[] PROGMEM = "7"; 
+_8               variable     47 messages.h       const char _8[] PROGMEM = "8"; 
+_9               variable     48 messages.h       const char _9[] PROGMEM = "9"; 
+accI0            variable    553 stl.cpp          int32_t accI0 = 0, accI1 = 0;
+accI1            variable    553 stl.cpp          int32_t accI0 = 0, accI1 = 0;
+accumulator      variable     12 stl.cpp          int32_t accumulator[2];
+activeAImask     variable     50 stl.cpp          uint8_t volatile activeAImask;
+addLineMsgStr    variable     56 messages.h       const char addLineMsgStr[] PROGMEM = "[+]";
+addr             variable     80 stl.cpp          int8_t addr;
+ai               variable     29 stl.cpp          uint8_t volatile ai[8];
+ao               variable     30 stl.cpp          uint8_t volatile ao[12];
+bit_pos          variable     79 stl.cpp          uint8_t mem_ptr, bit_pos, mask, mem_id;
+bufferStr        variable     16 gui.cpp          char bufferStr[16];
+buttons          variable     26 stl.cpp          uint8_t volatile buttons;
+buttons          variable     35 ConsoleEditor/main.cpp uint8_t volatile buttons;
+c                variable     31 stl.cpp          uint8_t volatile c;
+cancel_RLO       variable     76 stl.cpp          uint8_t volatile cancel_RLO = true;
+clearMsgStr      variable     61 messages.h       const char clearMsgStr[] PROGMEM = "Erasing local program...";
+colon            variable     65 messages.h       const char colon[] PROGMEM = ":";
+comAritAddIStr   variable    157 messages.h       const char comAritAddIStr[] PROGMEM = "+I ";
+comAritDivIStr   variable    160 messages.h       const char comAritDivIStr[] PROGMEM = "/I ";
+comAritMulIStr   variable    159 messages.h       const char comAritMulIStr[] PROGMEM = "*I ";
+comAritSubIStr   variable    158 messages.h       const char comAritSubIStr[] PROGMEM = "-I ";
+comBasicANStr    variable    148 messages.h       const char comBasicANStr[] PROGMEM = "AN ";
+comBasicAStr     variable    146 messages.h       const char comBasicAStr[] PROGMEM = "A ";
+comBasicAssignStr variable    150 messages.h       const char comBasicAssignStr[] PROGMEM = "= ";
+comBasicFNStr    variable    154 messages.h       const char comBasicFNStr[] PROGMEM = "FN ";
+comBasicFPStr    variable    153 messages.h       const char comBasicFPStr[] PROGMEM = "FP ";
+comBasicONStr    variable    149 messages.h       const char comBasicONStr[] PROGMEM = "ON ";
+comBasicOStr     variable    147 messages.h       const char comBasicOStr[] PROGMEM = "O ";
+comBasicRStr     variable    152 messages.h       const char comBasicRStr[] PROGMEM = "R ";
+comBasicSStr     variable    151 messages.h       const char comBasicSStr[] PROGMEM = "S ";
+comCompDiffIStr  variable    162 messages.h       const char comCompDiffIStr[] PROGMEM = "<>I";
+comCompEqIStr    variable    161 messages.h       const char comCompEqIStr[] PROGMEM = "==I";
+comCompGtEqIStr  variable    165 messages.h       const char comCompGtEqIStr[] PROGMEM = ">=I";
+comCompGtIStr    variable    163 messages.h       const char comCompGtIStr[] PROGMEM = ">I ";
+comCompLtEqIStr  variable    166 messages.h       const char comCompLtEqIStr[] PROGMEM = "<=I";
+comCompLtIStr    variable    164 messages.h       const char comCompLtIStr[] PROGMEM = "<I ";
+comCounterCDStr  variable    174 messages.h       const char comCounterCDStr[] PROGMEM = "CD ";
+comCounterCUStr  variable    173 messages.h       const char comCounterCUStr[] PROGMEM = "CU ";
+comCounterLCStr  variable    178 messages.h       const char comCounterLCStr[] PROGMEM = "LC ";
+comCounterLStr   variable    177 messages.h       const char comCounterLStr[] PROGMEM = "L ";
+comCounterRStr   variable    176 messages.h       const char comCounterRStr[] PROGMEM = "R ";
+comCounterSStr   variable    175 messages.h       const char comCounterSStr[] PROGMEM = "S ";
+comDesc          variable    234 messages.h       const char *const comDesc[] PROGMEM = {
+comDescAritAddIStr variable    201 messages.h       const char comDescAritAddIStr[] PROGMEM = "Add";
+comDescAritDivIStr variable    204 messages.h       const char comDescAritDivIStr[] PROGMEM = "Divide";
+comDescAritMulIStr variable    203 messages.h       const char comDescAritMulIStr[] PROGMEM = "Multiply";
+comDescAritSubIStr variable    202 messages.h       const char comDescAritSubIStr[] PROGMEM = "Substract";
+comDescBasicANStr variable    192 messages.h       const char comDescBasicANStr[] PROGMEM = "Not And";
+comDescBasicAStr variable    190 messages.h       const char comDescBasicAStr[] PROGMEM = "And";
+comDescBasicAssignStr variable    194 messages.h       const char comDescBasicAssignStr[] PROGMEM = "Assign";
+comDescBasicFNStr variable    198 messages.h       const char comDescBasicFNStr[] PROGMEM = "Negative edge";
+comDescBasicFPStr variable    197 messages.h       const char comDescBasicFPStr[] PROGMEM = "Positive edge";
+comDescBasicONStr variable    193 messages.h       const char comDescBasicONStr[] PROGMEM = "Not Or";
+comDescBasicOStr variable    191 messages.h       const char comDescBasicOStr[] PROGMEM = "Or";
+comDescBasicRStr variable    196 messages.h       const char comDescBasicRStr[] PROGMEM = "Reset";
+comDescBasicSStr variable    195 messages.h       const char comDescBasicSStr[] PROGMEM = "Set";
+comDescCompDiffIStr variable    206 messages.h       const char comDescCompDiffIStr[] PROGMEM = "Diffrent";
+comDescCompEqIStr variable    205 messages.h       const char comDescCompEqIStr[] PROGMEM = "Equals";
+comDescCompGtEqIStr variable    209 messages.h       const char comDescCompGtEqIStr[] PROGMEM = "Greater or equal";
+comDescCompGtIStr variable    207 messages.h       const char comDescCompGtIStr[] PROGMEM = "Greater";
+comDescCompLtEqIStr variable    210 messages.h       const char comDescCompLtEqIStr[] PROGMEM = "Less or equal";
+comDescCompLtIStr variable    208 messages.h       const char comDescCompLtIStr[] PROGMEM = "Less";
+comDescCounterCDStr variable    218 messages.h       const char comDescCounterCDStr[] PROGMEM = "Decrement counter";
+comDescCounterCUStr variable    217 messages.h       const char comDescCounterCUStr[] PROGMEM = "Increment counter";
+comDescCounterLStr variable    221 messages.h       const char comDescCounterLStr[] PROGMEM = "Load counter";
+comDescCounterRStr variable    220 messages.h       const char comDescCounterRStr[] PROGMEM = "Reset counter";
+comDescCounterStr variable    219 messages.h       const char comDescCounterStr[] PROGMEM = "Set counter";
+comDescDateTimeGetDayStr variable    229 messages.h       const char comDescDateTimeGetDayStr[] PROGMEM = "Get day";
+comDescDateTimeGetHourStr variable    230 messages.h       const char comDescDateTimeGetHourStr[] PROGMEM = "Get hour";
+comDescDateTimeGetMinuteStr variable    231 messages.h       const char comDescDateTimeGetMinuteStr[] PROGMEM = "Get minute";
+comDescDateTimeGetMonthStr variable    228 messages.h       const char comDescDateTimeGetMonthStr[] PROGMEM = "Get month";
+comDescDateTimeGetSecondStr variable    232 messages.h       const char comDescDateTimeGetSecondStr[] PROGMEM = "Get second";
+comDescDateTimeGetYearStr variable    227 messages.h       const char comDescDateTimeGetYearStr[] PROGMEM = "Get year";
+comDescJumpCondNotStr variable    225 messages.h       const char comDescJumpCondNotStr[] PROGMEM = "Jump cond. if not";
+comDescJumpCondStr variable    224 messages.h       const char comDescJumpCondStr[] PROGMEM = "Jump cond.";
+comDescJumpUncStr variable    223 messages.h       const char comDescJumpUncStr[] PROGMEM = "Jump uncond.";
+comDescMoveLStr  variable    199 messages.h       const char comDescMoveLStr[] PROGMEM = "Load";
+comDescMoveTStr  variable    200 messages.h       const char comDescMoveTStr[] PROGMEM = "Transfer";
+comDescNOPStr    variable    189 messages.h       const char comDescNOPStr[] PROGMEM = "No operation";
+comDescTimerRStr variable    216 messages.h       const char comDescTimerRStr[] PROGMEM = "Reset timer";
+comDescTimerSDStr variable    213 messages.h       const char comDescTimerSDStr[] PROGMEM = "On-Delay timer";
+comDescTimerSEStr variable    212 messages.h       const char comDescTimerSEStr[] PROGMEM = "Ext. pulse timer";
+comDescTimerSFStr variable    215 messages.h       const char comDescTimerSFStr[] PROGMEM = "Off-Delay timer";
+comDescTimerSPStr variable    211 messages.h       const char comDescTimerSPStr[] PROGMEM = "Pulse timer";
+comDescTimerSSStr variable    214 messages.h       const char comDescTimerSSStr[] PROGMEM = "Ret. On-Delay tim.";
+comGetDayStr     variable    184 messages.h       const char comGetDayStr[] PROGMEM = "DA ";
+comGetHourStr    variable    185 messages.h       const char comGetHourStr[] PROGMEM = "HO ";
+comGetMinuteStr  variable    186 messages.h       const char comGetMinuteStr[] PROGMEM = "MI ";
+comGetMonthStr   variable    183 messages.h       const char comGetMonthStr[] PROGMEM = "MO ";
+comGetSecondStr  variable    187 messages.h       const char comGetSecondStr[] PROGMEM = "SN ";
+comGetYearStr    variable    182 messages.h       const char comGetYearStr[] PROGMEM = "YE ";
+comGroups        variable    348 messages.h       const char comGroups[] = { 1, 10, 10, 12, 12, 18, 18, 23, 23, 27, 27, 33, 33, 36, 36, 42}; 
+comJumpCondNotStr variable    181 messages.h       const char comJumpCondNotStr[] PROGMEM = "JCN";
+comJumpCondStr   variable    180 messages.h       const char comJumpCondStr[] PROGMEM = "JC ";
+comJumpUncStr    variable    179 messages.h       const char comJumpUncStr[] PROGMEM = "JU ";
+comMenuAritmeticStr variable    134 messages.h       const char comMenuAritmeticStr[] PROGMEM = "Aritmetic";
+comMenuBasicStr  variable    132 messages.h       const char comMenuBasicStr[] PROGMEM = "Logic";
+comMenuCompareStr variable    135 messages.h       const char comMenuCompareStr[] PROGMEM = "Compare";
+comMenuCounterStr variable    137 messages.h       const char comMenuCounterStr[] PROGMEM = "Counters";
+comMenuDateTimeStr variable    139 messages.h       const char comMenuDateTimeStr[] PROGMEM = "Date/Time";
+comMenuJumpStr   variable    138 messages.h       const char comMenuJumpStr[] PROGMEM = "Jump";
+comMenuMoveStr   variable    133 messages.h       const char comMenuMoveStr[] PROGMEM = "Move";
+comMenuTimersStr variable    136 messages.h       const char comMenuTimersStr[] PROGMEM = "Timers";
+comMoveLStr      variable    155 messages.h       const char comMoveLStr[] PROGMEM = "L ";
+comMoveTStr      variable    156 messages.h       const char comMoveTStr[] PROGMEM = "T ";
+comNOPStr        variable    145 messages.h       const char comNOPStr[] PROGMEM = "NOP";
+comStr           variable    356 messages.h       const char *const comStr[] PROGMEM = {
+comTimerRStr     variable    172 messages.h       const char comTimerRStr[] PROGMEM = "R ";
+comTimerSDStr    variable    169 messages.h       const char comTimerSDStr[] PROGMEM = "SD ";
+comTimerSEStr    variable    168 messages.h       const char comTimerSEStr[] PROGMEM = "SE ";
+comTimerSFStr    variable    171 messages.h       const char comTimerSFStr[] PROGMEM = "SF ";
+comTimerSPStr    variable    167 messages.h       const char comTimerSPStr[] PROGMEM = "SP ";
+comTimerSSStr    variable    170 messages.h       const char comTimerSSStr[] PROGMEM = "SS ";
+commandGroupMenu variable    337 messages.h       const char *const commandGroupMenu[] PROGMEM = {
+consoleAttributes variable     28 ConsoleEditor/main.cpp WORD consoleAttributes;
+counter          variable     53 stl.cpp          int32_t volatile counter[8];
+default_parallel key         338 ConsoleEditor/avrdude.conf default_parallel = "";
+default_serial   key         339 ConsoleEditor/avrdude.conf default_serial = "";
+diPins           variable     56 stl.cpp          const uint8_t diPins[] = {10, 11, 12, 13};
+display          variable     13 gui.cpp          Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+doPins           variable     57 stl.cpp          const uint8_t doPins[] = {8, 7, 6, 5};
+editMenu         variable    350 messages.h       const char *const editMenu[] PROGMEM = {
+editMenuEditStr  variable    142 messages.h       const char editMenuEditStr[] PROGMEM = "Edit";
+editMenuInsertStr variable    141 messages.h       const char editMenuInsertStr[] PROGMEM = "Insert";
+editMenuRemoveStr variable    143 messages.h       const char editMenuRemoveStr[] PROGMEM = "Remove";
+editorBufStr     variable     11 editor.cpp       char editorBufStr[16];
+editorBufStr     variable     54 ConsoleEditor/editor.cpp char editorBufStr[20];
+enterBitPositionMsgStr variable     53 messages.h       const char enterBitPositionMsgStr[] PROGMEM = "Enter bit position:";
+enterByteNrMsgStr variable     69 messages.h       const char enterByteNrMsgStr[] PROGMEM = "Enter byte nr:";
+enterCounterNrMsgStr variable     73 messages.h       const char enterCounterNrMsgStr[] PROGMEM = "Enter counter nr:";
+enterDWordNrMsgStr variable     71 messages.h       const char enterDWordNrMsgStr[] PROGMEM = "Enter dword nr:";
+enterDayMsgStr   variable     83 messages.h       const char enterDayMsgStr[] PROGMEM = "Enter day:";
+enterHourMsgStr  variable     81 messages.h       const char enterHourMsgStr[] PROGMEM = "Enter hour:";
+enterInputNrMsgStr variable     67 messages.h       const char enterInputNrMsgStr[] PROGMEM = "Enter input nr:";
+enterMinuteMsgStr variable     82 messages.h       const char enterMinuteMsgStr[] PROGMEM = "Enter minute:";
+enterMonthMsgStr variable     84 messages.h       const char enterMonthMsgStr[] PROGMEM = "Enter month:";
+enterOutputNrMsgStr variable     68 messages.h       const char enterOutputNrMsgStr[] PROGMEM = "Enter output nr:";
+enterProgramLineMsgStr variable     74 messages.h       const char enterProgramLineMsgStr[] PROGMEM = "Enter program line:";
+enterTimerNrMsgStr variable     72 messages.h       const char enterTimerNrMsgStr[] PROGMEM = "Enter timer nr:";
+enterValueMsgStr variable     54 messages.h       const char enterValueMsgStr[] PROGMEM = "Enter value:";
+enterVariablePositionMsgStr variable     52 messages.h       const char enterVariablePositionMsgStr[] PROGMEM = "Enter var position:";
+enterWordNrMsgStr variable     70 messages.h       const char enterWordNrMsgStr[] PROGMEM = "Enter word nr:";
+enterYearMsgStr  variable     85 messages.h       const char enterYearMsgStr[] PROGMEM = "Enter year:";
+fixedTimer       variable     51 stl.cpp          uint8_t volatile fixedTimer[8];
+fixedTimerTime   variable     55 stl.cpp          const PROGMEM uint8_t fixedTimerTime[] = {10, 20, 40, 50, 80, 100, 160, 200};
+framTestNotPassed variable     80 messages.h       const char framTestNotPassed[] PROGMEM = "FRAM test not passed";
+framTestPassed   variable     79 messages.h       const char framTestPassed[] PROGMEM = "FRAM test passed";
+func_ptr         variable     17 stl.cpp          void (*func_ptr[])(uint32_t) = {_nop, _and, _or, _nand, _nor, _assign, _s, _r, _fp, _fn, 
+getTimePtr       variable    242 Time.cpp         getExternalTime getTimePtr; // pointer to external sync function
+guiBufferStr     variable     15 ConsoleEditor/gui.cpp char guiBufferStr[16];
+hConsole         variable     26 ConsoleEditor/main.cpp HANDLE hConsole;
+limitMsgStr      variable     55 messages.h       const char limitMsgStr[] PROGMEM = "LIMIT";
+m                variable     27 stl.cpp          uint8_t volatile m[64];
+m                variable     34 ConsoleEditor/main.cpp uint8_t volatile m[64];
+mainMenu         variable    329 messages.h       const char *const mainMenu[] PROGMEM = {
+mainMenuClearStr variable    129 messages.h       const char mainMenuClearStr[] PROGMEM = "Clear";
+mainMenuEditStr  variable    127 messages.h       const char mainMenuEditStr[] PROGMEM = "Edit";
+mainMenuProgramStr variable    128 messages.h       const char mainMenuProgramStr[] PROGMEM = "Program";
+mainMenuRunStr   variable    126 messages.h       const char mainMenuRunStr[] PROGMEM = "Run";
+mainMenuSetDateTimeStr variable    130 messages.h       const char mainMenuSetDateTimeStr[] PROGMEM = "Set Date/Time";
+mask             variable     79 stl.cpp          uint8_t mem_ptr, bit_pos, mask, mem_id;
+memAI            variable     47 stl.cpp          uint8_t volatile * const memAI[] = {&ai[0], &ai[1], &ai[2], &ai[3], &ai[4], &ai[5], &ai[6], &ai[7]};
+memAIStr         variable    288 messages.h       const char memAIStr[] PROGMEM = "AI";
+memAO            variable     48 stl.cpp          uint8_t volatile * const memAO[] = {&ao[0], &ao[1], &ao[2], &ao[3], &ao[4], &ao[5], &ao[6], &ao[7], &ao[8], &ao[9], &ao[10], &ao[11]};
+memAOStr         variable    289 messages.h       const char memAOStr[] PROGMEM = "AO";
+memAddrStr       variable    291 messages.h       const char memAddrStr[] PROGMEM = "@";
+memBitAquireEnabled variable    491 messages.h       const char memBitAquireEnabled[] PROGMEM = {0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0}; 
+memC             variable     45 stl.cpp          uint8_t volatile * const memC[] = {&c};
+memCStr          variable    287 messages.h       const char memCStr[] PROGMEM = "C";
+memConstStr      variable    290 messages.h       const char memConstStr[] PROGMEM = "#";
+memDI            variable     35 stl.cpp          uint8_t volatile * const memDI[] = {&nullByte};
+memDIStr         variable    281 messages.h       const char memDIStr[] PROGMEM = "DI";
+memDO            variable     36 stl.cpp          uint8_t volatile * const memDO[] = {&nullByte};
+memDOStr         variable    280 messages.h       const char memDOStr[] PROGMEM = "DO";
+memDesc          variable    307 messages.h       const char *const memDesc[] PROGMEM = {
+memDescAIStr     variable    302 messages.h       const char memDescAIStr[] PROGMEM = "Analog input";
+memDescAOStr     variable    303 messages.h       const char memDescAOStr[] PROGMEM = "Analog output";
+memDescAddrStr   variable    305 messages.h       const char memDescAddrStr[] PROGMEM = "Program line number";
+memDescCStr      variable    301 messages.h       const char memDescCStr[] PROGMEM = "Counter";
+memDescConstStr  variable    304 messages.h       const char memDescConstStr[] PROGMEM = "Constant";
+memDescDIStr     variable    295 messages.h       const char memDescDIStr[] PROGMEM = "Digital input";
+memDescDOStr     variable    294 messages.h       const char memDescDOStr[] PROGMEM = "Digital output";
+memDescMBStr     variable    298 messages.h       const char memDescMBStr[] PROGMEM = "Memory byte";
+memDescMDStr     variable    300 messages.h       const char memDescMDStr[] PROGMEM = "Memory double word";
+memDescMStr      variable    296 messages.h       const char memDescMStr[] PROGMEM = "Bit marker";
+memDescMWStr     variable    299 messages.h       const char memDescMWStr[] PROGMEM = "Memory word";
+memDescNULLStr   variable    293 messages.h       const char memDescNULLStr[] PROGMEM = "";
+memDescTStr      variable    297 messages.h       const char memDescTStr[] PROGMEM = "Timer";
+memGroups        variable    426 messages.h       const char memGroups[] PROGMEM = {0, 0, 
+memM             variable     37 stl.cpp          uint8_t volatile * const memM[] = {&m[0], &m[1], &buttons, &m[3], &m[4], &m[5], &m[6], &m[7],
+memMBStr         variable    284 messages.h       const char memMBStr[] PROGMEM = "MB";
+memMDStr         variable    286 messages.h       const char memMDStr[] PROGMEM = "MD";
+memMStr          variable    282 messages.h       const char memMStr[] PROGMEM = "M";
+memMWStr         variable    285 messages.h       const char memMWStr[] PROGMEM = "MW";
+memMap           variable     59 stl.cpp          uint8_t volatile *const *memMap[] = {
+memNULLStr       variable    279 messages.h       const char memNULLStr[] PROGMEM = "~";
+memNull          variable     34 stl.cpp          uint8_t volatile * const memNull[] = {&nullByte};
+memStr           variable    410 messages.h       const char *const memStr[] PROGMEM = {
+memT             variable     46 stl.cpp          uint8_t volatile * const memT[] = {&t[0], &t[1], &t[2], &t[3], &t[4], &t[5], &t[6], &t[7]};
+memTStr          variable    283 messages.h       const char memTStr[] PROGMEM = "T";
+memValidationRules variable    477 messages.h       const int16_t memValidationRules[] PROGMEM = {0, 0, 0, 0, 0, //signed?, how many digits?, max digit, min value, max value 
+memValueAquireMsg variable    492 messages.h       const char memValueAquireMsg[] PROGMEM = {0, 
+mem_id           variable     79 stl.cpp          uint8_t mem_ptr, bit_pos, mask, mem_id;
+mem_ptr          variable     79 stl.cpp          uint8_t mem_ptr, bit_pos, mask, mem_id;
+menuPosition     variable      9 editor.cpp       int menuPosition = 0;
+menuPosition     variable     52 ConsoleEditor/editor.cpp int menuPosition = 0;
+message          variable     87 messages.h       const char *const message[] PROGMEM = {
+mustBeInRange    variable     59 messages.h       const char mustBeInRange[] PROGMEM = "Must be in range: ";
+noChangesMsgStr  variable     64 messages.h       const char noChangesMsgStr[] PROGMEM = "No changes!";
+noProgramMsgStr  variable     58 messages.h       const char noProgramMsgStr[] PROGMEM = "No program";
+nullByte         variable     13 stl.cpp          uint8_t nullByte;
+numbers          variable     50 messages.h       const char *const numbers[] PROGMEM = {_0, _1, _2, _3, _4, _5, _6, _7, _8, _9};
+oledTestPassed   variable     76 messages.h       const char oledTestPassed[] PROGMEM = "OLED test passed";
+pcf20            variable     14 gui.cpp          PCF8574 pcf20(0x20);
+program          variable     11 stl.cpp          uint32_t program[MAX_PROGRAM_SIZE];
+program          variable     31 ConsoleEditor/main.cpp uint32_t program[MAX_PROGRAM_SIZE];
+programChanged   variable     14 stl.cpp          uint8_t programChanged = 0;
+programChanged   variable     36 ConsoleEditor/main.cpp uint8_t programChanged;
+programmingEepromMsgStr variable     60 messages.h       const char programmingEepromMsgStr[] PROGMEM = "Programming eeprom...";
+readingEepromMsgStr variable     62 messages.h       const char readingEepromMsgStr[] PROGMEM = "Reading from eeprom...";
+reserved0MsgStr  variable     63 messages.h       const char reserved0MsgStr[] PROGMEM = "";
+rtcTestNotPassed variable     78 messages.h       const char rtcTestNotPassed[] PROGMEM = "RTC test not passed";
+rtcTestPassed    variable     77 messages.h       const char rtcTestPassed[] PROGMEM = "RTC test passed";
+runMenu          variable    323 messages.h       const char *const runMenu[] PROGMEM = {
+runMenuCanceStr  variable    124 messages.h       const char runMenuCanceStr[] PROGMEM = "Cancel";
+runMenuDiscardStr variable    123 messages.h       const char runMenuDiscardStr[] PROGMEM = "Discard";
+runMenuSaveAndRunStr variable    122 messages.h       const char runMenuSaveAndRunStr[] PROGMEM = "Save&Run";
+runningMsgStr    variable     57 messages.h       const char runningMsgStr[] PROGMEM = "Running";
+selectedPosition variable     10 editor.cpp       int selectedPosition = 0;
+selectedPosition variable     53 ConsoleEditor/editor.cpp int selectedPosition = 0;
+splash1_data     variable      5 splash.h         const uint8_t PROGMEM splash1_data[] = {};
+splash2_data     variable     10 splash.h         const uint8_t PROGMEM splash2_data[] = {};
+sysUnsyncedTime  variable    246 Time.cpp         time_t sysUnsyncedTime = 0; // the time sysTime unadjusted by sync 
+t                variable     28 stl.cpp          uint8_t volatile t[8];
+tcList           variable     72 Adafruit_SPITFT.cpp } tcList[] = {{TC0, TC0_GCLK_ID, EVSYS_ID_USER_TC0_EVU},
+timer            variable     52 stl.cpp          uint32_t volatile timer[8];
+tm               variable     32 stl.cpp          tmElements_t tm;
+writepage        key        8513 ConsoleEditor/avrdude.conf writepage = " 1 1 0 0 0 0 1 0",
+written          variable     14 ConsoleEditor/gui.cpp DWORD written;

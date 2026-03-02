@@ -1,0 +1,4 @@
+[ ] self check (in oled menu)
+[ ] programming port on oled panel
+[ ] version verification before download/upload
+[ ] separate display interface from editor

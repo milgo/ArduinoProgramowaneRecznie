@@ -139,9 +139,9 @@ void setup() {
   TCCR1B = 0;
   TCNT1=0;
 
-  OCR1A=20000;
+  OCR1A=20000; //Set OCR1A for 10ms : (16*10^6 / (8 * 100{freq})) - 1 = 19999
   
-  TCCR1B|=(1<<CS11)|(1<<WGM12);
+  TCCR1B|=(1<<CS11)|(1<<WGM12); //prescaler 8, Clear Timer on Compare CTC
   TIMSK1|=(1<<OCIE1A);
   interrupts();
 
